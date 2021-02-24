@@ -33,11 +33,11 @@
 }
 
 @media only screen and (max-width: 700px) {
-    .Label {
-        min-width: 32%;
-      }
-      
-      .Input {
-        min-width: 73%;
-      }
+  .Label {
+    min-width: 32%;
+  }
+
+  .Input {
+    min-width: 73%;
+  }
 }

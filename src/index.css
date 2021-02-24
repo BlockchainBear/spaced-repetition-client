@@ -10,11 +10,12 @@ body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1B2432;
-  color: #1F7A8C;
+  background-color: #1b2432;
+  color: #1f7a8c;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -26,14 +27,14 @@ button {
   padding: 8px 15px 8px 15px;
   border-radius: 10px;
   border-style: none;
-  border: #1F7A8C 2px solid;
+  border: #1f7a8c 2px solid;
   font-family: 'Roboto', sans-serif;
-  color: #94ECBE;
-  background-color: #1B2432;
+  color: #94ecbe;
+  background-color: #1b2432;
 }
 
 button:hover {
-  background-color: #1F7A8C;
+  background-color: #1f7a8c;
 }
 
 :root {

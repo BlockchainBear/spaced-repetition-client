@@ -1,10 +1,9 @@
 .btnBox {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .btnBox a {
-    color: #ba274a;
+  color: #ba274a;
 }
-
