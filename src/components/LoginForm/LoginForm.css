@@ -1,0 +1,43 @@
+.LoginForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.InputBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  min-width: 100%;
+}
+
+.Label {
+  padding: 10px;
+  border: #1f7a8c 2px solid;
+  border-radius: 10px 0px 0px 10px;
+  color: #94ecbe;
+  min-width: 23%;
+  max-width: 160px;
+}
+
+.Input {
+  padding: 12px;
+  border: #1f7a8c 2px solid;
+  border-left: none;
+  border-radius: 0px 10px 10px 0px;
+  color: #1f7a8c;
+  min-width: 53%;
+  max-width: 400px;
+}
+
+@media only screen and (max-width: 700px) {
+    .Label {
+        min-width: 32%;
+      }
+      
+      .Input {
+        min-width: 73%;
+      }
+}

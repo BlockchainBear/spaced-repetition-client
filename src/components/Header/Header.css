@@ -1,0 +1,80 @@
+.navBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px 15px 0px 15px;
+}
+
+.logoBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 35px;
+  color: #94ecbe;
+}
+
+.logoIcon {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.loginNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 250px;
+}
+
+.loginLink {
+  padding: 15px 35px 15px 35px;
+  border: #1f7a8c 2px solid;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.loginLink a {
+  text-decoration: none;
+  color: #94ecbe;
+}
+
+.loginLink:hover {
+  background-color: #1f7a8c;
+}
+
+.signupLink {
+  padding: 15px 35px 15px 35px;
+  border: #1f7a8c 2px solid;
+  background-color: #1f7a8c;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.signupLink a {
+  text-decoration: none;
+  color: #94ecbe;
+}
+
+.signupLink:hover {
+  background-color: #ba274a;
+  border: #ba274a 2px solid;
+}
+
+@media only screen and (max-width: 700px) {
+  .navBox {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  .logoBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .logo a {
+    font-size: 25px;
+  }
+}

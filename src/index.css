@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&family=Roboto&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,9 +7,33 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1B2432;
+  color: #1F7A8C;
+}
+
+h1, h2 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+p {
+  text-align: center;
+}
+
+button {
+  padding: 8px 15px 8px 15px;
+  border-radius: 10px;
+  border-style: none;
+  border: #1F7A8C 2px solid;
+  font-family: 'Roboto', sans-serif;
+  color: #94ECBE;
+  background-color: #1B2432;
+}
+
+button:hover {
+  background-color: #1F7A8C;
 }
 
 :root {
