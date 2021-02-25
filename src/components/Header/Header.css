@@ -6,6 +6,8 @@
   margin: 0px 15px 0px 15px;
 }
 
+/* --------------- Logo Styling ------------------ */
+
 .logoBox {
   display: flex;
   flex-direction: row;
@@ -23,6 +25,8 @@
   max-height: 50px;
 }
 
+/* ----------- Login Styling ------------------- */
+
 .loginNav {
   display: flex;
   flex-direction: row;
@@ -31,14 +35,18 @@
 }
 
 .loginLink {
-  padding: 15px 35px 15px 35px;
   border: #1f7a8c 2px solid;
   border-radius: 10px 0px 0px 10px;
 }
 
 .loginLink a {
   text-decoration: none;
+  text-align: center;
+  line-height: 50px;
   color: #94ecbe;
+  display: block;
+  width: 120px;
+  height: 50px;
 }
 
 .loginLink:hover {
@@ -46,7 +54,6 @@
 }
 
 .signupLink {
-  padding: 15px 35px 15px 35px;
   border: #1f7a8c 2px solid;
   background-color: #1f7a8c;
   border-radius: 0px 10px 10px 0px;
@@ -54,13 +61,52 @@
 
 .signupLink a {
   text-decoration: none;
+  text-align: center;
+  line-height: 50px;
   color: #94ecbe;
+  display: block;
+  width: 120px;
+  height: 50px;
 }
 
 .signupLink:hover {
   background-color: #ba274a;
   border: #ba274a 2px solid;
 }
+
+/* ---------------- Logout Styling --------------- */
+
+.logoutNavBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logoutNav {
+  border: #1f7a8c 2px solid;
+  border-radius: 10px;
+}
+
+.logoutNav a {
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #94ecbe;
+  display: block;
+  width: 120px;
+  height: 50px;
+}
+
+.logoutNav:hover {
+  background-color: #ba274a;
+  border: #ba274a 2px solid;
+}
+
+.usernameSpan {
+  margin-right: 10px;
+}
+
+
 
 @media only screen and (max-width: 700px) {
   .navBox {
@@ -76,5 +122,15 @@
 
   .logo a {
     font-size: 25px;
+  }
+
+  .logoutNav a {
+    line-height: 50px;
+    width: 200px;
+    height: 50px;
+  }
+
+  .usernameSpan {
+    display: none;
   }
 }

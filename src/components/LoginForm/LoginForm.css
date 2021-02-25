@@ -22,7 +22,7 @@
   max-width: 160px;
 }
 
-.Input {
+#login-username-input, #login-password-input {
   padding: 12px;
   border: #1f7a8c 2px solid;
   border-left: none;
@@ -37,7 +37,7 @@
     min-width: 32%;
   }
 
-  .Input {
+ #login-username-input, #login-password-input {
     min-width: 73%;
   }
 }
