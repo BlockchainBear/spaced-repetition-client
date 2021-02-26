@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import LanguageContext from '../../contexts/LanguageContext';
 import './DashboardWordCard.css';
 
 export default class DashboardWordCard extends Component {
@@ -12,10 +11,10 @@ export default class DashboardWordCard extends Component {
       return <p>Practice words not found</p>;
     }
     return (
-      <div className="practiceWordBox">
+      <ul className="practiceWordBox">
         {this.props.words.map((word) => {
           return (
-            <div className="practiceWordCard" key={word.id}>
+            <li className="practiceWordCard" key={word.id}>
               <h4 className="practiceWord">{word.original}</h4>
               <p className="pwCorrect">
                 correct answer count: {word.correct_count}
@@ -23,10 +22,10 @@ export default class DashboardWordCard extends Component {
               <p className="pwInCorrect">
                 incorrect answer count: {word.incorrect_count}
               </p>
-            </div>
+            </li>
           );
         })}
-      </div>
+      </ul>
     );
   };
 
