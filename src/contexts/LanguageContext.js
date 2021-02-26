@@ -31,7 +31,6 @@ export class LanguageProvider extends Component {
   };
 
   setLanguage = (language) => {
-      console.log(language)
     this.setState({ language });
   };
 
@@ -40,7 +39,6 @@ export class LanguageProvider extends Component {
   };
 
   setWords = (words) => {
-    console.log(words)
     this.setState({ words });
   };
 
