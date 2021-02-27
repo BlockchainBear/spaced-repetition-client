@@ -15,7 +15,7 @@ const LanguageApiService = {
 
   getHead() {
     return fetch(`${config.API_ENDPOINT}/language/head`, {
-      method: 'GET',
+      // method: 'GET',
       headers: {
         authorization: `Bearer ${TokenService.getAuthToken()}`,
       },

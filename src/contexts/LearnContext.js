@@ -98,16 +98,16 @@ export class LearnProvider extends Component {
       answer: this.state.answer,
       error: this.state.error,
       isResultDisplayed: this.state.isResultDisplayed,
-      setError: this.state.setError,
-      clearError: this.state.clearError,
-      setTotalScore: this.state.setTotalScore,
-      setWordCorrectCount: this.state.setWordCorrectCount,
-      setWordIncorrectCount: this.state.setWordIncorrectCount,
-      setNextWord: this.state.setNextWord,
-      setGuess: this.state.setGuess,
-      setPrevWord: this.state.setPrevWord,
-      setIsCorrect: this.state.setIsCorrect,
-      setAnswer: this.state.setAnswer,
+      setError: this.setError,
+      clearError: this.clearError,
+      setTotalScore: this.setTotalScore,
+      setWordCorrectCount: this.setWordCorrectCount,
+      setWordIncorrectCount: this.setWordIncorrectCount,
+      setNextWord: this.setNextWord,
+      setGuess: this.setGuess,
+      setPrevWord: this.setPrevWord,
+      setIsCorrect: this.setIsCorrect,
+      setAnswer: this.setAnswer,
       reset: this.reset,
       setIsResultDisplayed: this.setIsResultDisplayed,
     };
@@ -118,3 +118,4 @@ export class LearnProvider extends Component {
     );
   }
 }
+
