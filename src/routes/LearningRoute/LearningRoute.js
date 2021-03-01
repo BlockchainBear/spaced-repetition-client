@@ -7,6 +7,10 @@ import './LearningRoute.css';
 class LearningRoute extends Component {
   static contextType = LearnContext;
 
+  state = {
+    guess: '',
+  };
+
   componentDidMount() {
     LanguageApiService.getHead()
       .then((data) => {
@@ -22,6 +26,28 @@ class LearningRoute extends Component {
       .catch(this.context.setError);
   }
 
+  handleOnChange = (e) => {
+    const guess = e.target.value;
+    this.setState({ guess: guess });
+  };
+
+  handleSubmit(e) {
+    e.preventDefault();
+    const guess = this.state.guess;
+    LanguageApiService.submitGuess(guess).then((res) => {
+      this.context.setPrevWord(this.context.nextWord);
+      this.context.clearError();
+      this.context.setTotalScore(res.totalScore);
+      this.context.setWordCorrectCount(res.wordCorrectCount);
+      this.context.setWordIncorrectCount(res.wordIncorrectCount);
+      this.context.setNextWord(res.nextWord);
+      this.context.setAnswer(res.answer);
+      this.context.setGuess(guess);
+      this.context.setIsCorrect(res.isCorrect);
+      this.context.setIsResultDisplayed(true);
+    });
+  }
+
   render() {
     return (
       <section className="mainWindow">
@@ -32,7 +58,10 @@ class LearningRoute extends Component {
                 <h2 className="translateTitle">Translate the word:</h2>
                 <span className="wotd">{this.context.nextWord}</span>
               </div>
-              <form className="translateForm">
+              <form
+                className="translateForm"
+                onSubmit={(e) => this.handleSubmit(e)}
+              >
                 <label htmlFor="learn-guess-input" className="translateLabel">
                   What's the translation for this word?
                 </label>
@@ -41,18 +70,23 @@ class LearningRoute extends Component {
                   name="learn-guess-input"
                   id="learn-guess-input"
                   className="translateInput"
+                  onChange={this.handleOnChange}
                   required
                 ></input>
-                <button type="submit" className="guessBtn">Submit your answer</button>
+                <button type="submit" className="guessBtn">
+                  Submit your answer
+                </button>
               </form>
             </div>
           ) : (
             <ResultCard />
           )}
           <div className="scoreBox">
-            <p className="correctScore">
-              Your total score is: {this.context.totalScore}
-            </p>
+            <div className="DisplayScore">
+              <p className="correctScore">
+                Your total score is: {this.context.totalScore}
+              </p>
+            </div>
             <p className="currentScore">
               You have answered this word correctly{' '}
               {this.context.wordCorrectCount} times.

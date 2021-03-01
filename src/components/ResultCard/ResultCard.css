@@ -1,0 +1,22 @@
+.feedbackBox {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultTitleCorrect, .resultTitleWrong {
+    margin-bottom: 0px;
+}
+
+.resultTitleCorrect {
+    color: #94ecbe;
+}
+
+.resultTitleWrong {
+    color: #ba274a;
+}
+
+.tryAgainBtn {
+    padding: 15px 20px 15px 20px;
+}
