@@ -1,7 +1,7 @@
 # Spaced Repetition Capstone
 
-Live App Link: https://spaced-repetition-adamfigueroa.vercel.app/register
-API Repo: https://github.com/adamfigueroa/spaced-repetition-server
+- Live App Link: https://spaced-repetition-adamfigueroa.vercel.app/register
+- API Repo: https://github.com/adamfigueroa/spaced-repetition-server
 
 ## Screenshots
 
