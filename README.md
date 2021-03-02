@@ -5,7 +5,9 @@ API Repo: https://github.com/adamfigueroa/spaced-repetition-server
 
 ## Screenshots
 
+![alt text](https://github.com/adamfigueroa/spaced-repetition-client/blob/main/src/images/screenshot2.png)
 
+![alt text](https://github.com/adamfigueroa/spaced-repetition-client/blob/main/src/images/screenshot1.png)
 
 ## Setup
 
